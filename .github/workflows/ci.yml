@@ -1,0 +1,14 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greeting
+        run: |
+          echo "Release drill CI triggered"
+          echo "All checks are placeholders for the dry run"
